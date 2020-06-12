@@ -1,0 +1,28 @@
+{
+    "items": [
+
+        // -----
+        // MacOS
+        // -----
+        {
+            "profile": "macos",
+            "path": "$HOME/.config",
+            "target": "$HOME/Public/Workspace/dotfiles/dotconfig"
+        },
+
+        // -----
+        // Windows
+        // -----
+        {
+            "profile": "windows",
+            "path": "$HOME\\OneDrive - Absolute\\Documents\\PowerShell",
+            "target": "C:\\Personal\\dotfiles\\dotconfig\\powershell"
+        },
+        {
+            "profile": "windows",
+            "path": "$HOME\\OneDrive - Absolute\\Documents\\WindowsPowerShell",
+            "target": "C:\\Personal\\dotfiles\\dotconfig\\powershell"
+        }
+
+    ]
+}

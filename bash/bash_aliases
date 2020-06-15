@@ -1,6 +1,8 @@
 # - .bash_aliases - A reference file for all bash aliases.
 
-alias ls="ls --color=auto"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
 alias ll="ls -alF"
 
 alias grep="grep --color=auto"

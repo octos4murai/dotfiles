@@ -1,9 +1,21 @@
-# - .bash_aliases - A reference file for all bash aliases.
+# - .bash_aliases - Sets up all bash aliases.
 
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
-alias ll="ls -alF"
+# MacOS and Linux have 'ls' commands with slightly different flags.
+# We detect which variant we have and use the correct flags.
+if ls --color > /dev/null 2>&1 ; then
+    # Linux
+    colorFlag="--color=auto"
+else
+    # MacOS
+    colorFlag="-G"
+fi
+
+alias ls="ls $colorFlag"
+alias l="ls -aF $colorFlag"
+alias ll="ls -alF $colorFlag"
 
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"

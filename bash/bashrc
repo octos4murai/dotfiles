@@ -7,11 +7,7 @@
 # - PATH -
 
 if [[ -d "$HOME/bin" ]] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-if [[ -d "$HOME/.local/bin" ]] ; then
-    PATH="$HOME/.local/bin:$PATH"
+    export PATH="$HOME/bin:$PATH"
 fi
 
 
@@ -26,48 +22,52 @@ esac
 
 # - General Settings -
 
-EDITOR=vim
-
-# Don't put duplicate lines or lines starting with space in the history.
-HISTCONTROL=ignoreboth
-
-HISTSIZE=1000
-HISTFILESIZE=2000
-
 shopt -s autocd
 shopt -s cdspell
 shopt -s checkwinsize
 shopt -s histappend
 
 
+# - Exports -
+
+export EDITOR="vim"
+
+# Don't put duplicate lines or lines starting with space in the history.
+export HISTCONTROL="ignoreboth"
+
+export HISTSIZE="1000"
+export HISTFILESIZE="2000"
+
+
 # - Prompt -
+
+# Styles
+reset="\e[0m"
+blue="\e[1;34m"
+green="\e[1;32m"
 
 unset PS1
 
-# Green - username@hostname
-PS1+='\[\e[1;32m\]\u@\h '
+# username@hostname
+PS1+="\[${green}\]\u@\h "
 
-# Blue - working directory
-PS1+='\[\e[01;34m\]\w '
+# Working directory
+PS1+="\[${blue}\]\w "
 
-# Default - '$'
-PS1+='\[\e[00m\]\$ '
+# '$'
+PS1+="\[${reset}\]\$ "
 
 
 # - Aliases -
 
-if [[ -f ~/.bash_aliases ]]; then
+if [[ -f ~/.bash_aliases ]] ; then
     . ~/.bash_aliases
 fi
 
 
-# - Plugins -
+# - Functions -
 
-# Enable bash completion
-if ! shopt -oq posix; then
-  if [[ -f /usr/share/bash-completion/bash_completion ]]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [[ -f /etc/bash_completion ]]; then
-    . /etc/bash_completion
-  fi
-fi
+# Create a new directory (recursively if necessary) and enter it.
+function mkd() {
+    mkdir -p "$@" && cd "$_"
+}

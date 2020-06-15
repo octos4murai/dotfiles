@@ -1,52 +1,54 @@
-" -----
-" Summary: A personal .vimrc file
-" Maintainer: Al Idian
-" -----
+" .vimrc - Customizations to run at the start of each Vim instance.
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
+" - General -
 
-" Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+" Make Vim more useful by foregoing compatibility with Vi.
+set nocompatible
 
-if has("vms")
-  set nobackup          " Do not keep a backup file, use versions instead.
-else
-  set backup            " Keep a backup file (restore to previous version).
-  if has('persistent_undo')
-    set undofile        " Keep an undo file (undo changes after closing).
-  endif
-endif
+" Disable audible bell.
+set noerrorbells
 
-if &t_Co > 2 || has("gui_running")
-  " Switch on highlighting the last used search pattern.
-  set hlsearch
-endif
+" Disable backups, swap files, and undo files.
+set nobackup
+set noundofile
+set noswapfile
 
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
 
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
+" - Appearance -
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+" Syntax highlighting on.
+syntax on
 
-  augroup END
+" Show line numbers.
+set number
+set relativenumber
 
-else
+" Wrap long lines to fit the display.
+set linebreak
 
-  set autoindent                " Always set autoindenting on.
+" Always show the status line.
+set laststatus=2
 
-endif " Has("autocmd").
 
-" Add optional packages.
-"
-" The matchit plugin makes the % command work better, but it is not backwards compatible.
-" The ! means the package won't be loaded right away but when plugins are loaded during initialization.
-if has('syntax') && has('eval')
-  packadd! matchit
-endif
+" - Editing - 
+
+" The tab key inserts four spaces.
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" Convert tabs to spaces.
+set expandtab
+
+" Auto-indentation on.
+set autoindent
+
+
+" - Searching - 
+
+" On search, ignore case until an uppercase character is entered.
+set smartcase
+set ignorecase
+
+" On search, do partial matching.
+set incsearch

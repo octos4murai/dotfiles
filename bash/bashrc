@@ -1,4 +1,4 @@
-# - .bashrc - Runs when an interactive shell is invoked.
+# .bashrc - Runs when an interactive shell is invoked.
 
 # By default .bashrc runs only when a non-login, interactive shell is invoked.
 # However, this .bashrc is also run by .bash_profile.

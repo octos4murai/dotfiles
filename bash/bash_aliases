@@ -1,4 +1,4 @@
-# - .bash_aliases - Sets up all bash aliases.
+# .bash_aliases - Sets up all bash aliases.
 
 alias ...="cd ../.."
 alias ....="cd ../../.."

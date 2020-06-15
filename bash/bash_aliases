@@ -13,8 +13,8 @@ else
     colorFlag="-G"
 fi
 
-alias ls="ls $colorFlag"
-alias l="ls -aF $colorFlag"
+alias ls="ls -F $colorFlag"
+alias la="ls -aF $colorFlag"
 alias ll="ls -alF $colorFlag"
 
 alias grep="grep --color=auto"

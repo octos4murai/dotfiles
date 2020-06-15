@@ -1,0 +1,15 @@
+# - .bash_aliases - A reference file for all bash aliases.
+
+alias ls="ls --color=auto"
+alias ll="ls -alF"
+
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+alias a="sudo apt"
+alias b="brew"
+alias g="git"
+alias v="vim"
+alias sv="sudo vim"
+alias t="tmux"

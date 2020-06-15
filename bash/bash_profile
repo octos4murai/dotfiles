@@ -1,19 +1,6 @@
-# -----
-# Summary: A personal .bash_profile file
-# Maintainer: Al Idian
-# -----
+# .bash_profile - Runs when a login shell is invoked.
 
 # Include .bashrc if it exists.
-if [ -f "$HOME/.bashrc" ]; then
+if [[ -f "$HOME/.bashrc" ]]; then
     . "$HOME/.bashrc"
-fi
-
-# Set PATH so it includes user's private bin if it exists.
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-# Set PATH so it includes user's private bin if it exists.
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
 fi

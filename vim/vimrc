@@ -43,6 +43,9 @@ set expandtab
 " Auto-indentation on.
 set autoindent
 
+" Allow backspacing through anything.
+set backspace=indent,eol,start
+
 
 " - Searching - 
 

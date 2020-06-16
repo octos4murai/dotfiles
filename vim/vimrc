@@ -16,8 +16,9 @@ set noswapfile
 
 " - Appearance -
 
-" Syntax highlighting on.
+" Apply syntax highlighting.
 syntax on
+colorscheme peachpuff
 
 " Show line numbers.
 set number

@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,powershell
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,powershell
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows
 
 ### Linux ###
 *~
@@ -45,16 +45,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### PowerShell ###
-# Exclude packaged modules
-*.zip
-
-# Exclude .NET assemblies from source
-*.dll
-
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
@@ -77,4 +71,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,powershell
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows

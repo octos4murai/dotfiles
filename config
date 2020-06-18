@@ -1,0 +1,15 @@
+## Configuration file for dotfiles.sh ##
+
+## MacOS ##
+macos       /home/octos4murai/Public/Workspace/dotfiles/bash/bashrc         /home/octos4murai/.bashrc
+macos       /home/octos4murai/Public/Workspace/dotfiles/bash/bash_aliases   /home/octos4murai/.bash_aliases
+macos       /home/octos4murai/Public/Workspace/dotfiles/bash/bash_profile   /home/octos4murai/.bash_profile
+macos       /home/octos4murai/Public/Workspace/dotfiles/git/gitconfig       /home/octos4murai/.gitconfig
+macos       /home/octos4murai/Public/Workspace/dotfiles/vim/vimrc           /home/octos4murai/.vimrc
+
+## Ubuntu ##
+ubuntu      /home/octos4murai/dotfiles/bash/bashrc          /home/octos4murai/.bashrc
+ubuntu      /home/octos4murai/dotfiles/bash/bash_aliases    /home/octos4murai/.bash_aliases
+ubuntu      /home/octos4murai/dotfiles/bash/bash_profile    /home/octos4murai/.bash_profile
+ubuntu      /home/octos4murai/dotfiles/git/gitconfig        /home/octos4murai/.gitconfig
+ubuntu      /home/octos4murai/dotfiles/vim/vimrc            /home/octos4murai/.vimrc

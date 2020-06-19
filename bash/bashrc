@@ -68,6 +68,6 @@ fi
 # - Functions -
 
 # Create a new directory (recursively if necessary) and enter it.
-function mkd() {
+function mcd() {
     mkdir -p "$@" && cd "$_"
 }

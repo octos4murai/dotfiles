@@ -27,6 +27,9 @@ set relativenumber
 " Wrap long lines to fit the display.
 set linebreak
 
+" Add color column guides.
+set colorcolumn=80,100
+
 " Always show the status line.
 set laststatus=2
 

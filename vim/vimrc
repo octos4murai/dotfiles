@@ -13,6 +13,8 @@ set nobackup
 set noundofile
 set noswapfile
 
+" Enable plugins.
+filetype plugin on
 
 " - Appearance -
 

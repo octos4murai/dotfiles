@@ -49,6 +49,9 @@ set autoindent
 " Allow backspacing through anything.
 set backspace=indent,eol,start
 
+" Map keys
+inoremap kj <Esc>
+
 
 " - Searching - 
 

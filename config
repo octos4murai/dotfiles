@@ -4,7 +4,6 @@
 macos       /Users/octos4murai/Public/Workspace/dotfiles/bash/bashrc                /Users/octos4murai/.bashrc
 macos       /Users/octos4murai/Public/Workspace/dotfiles/bash/bash_aliases          /Users/octos4murai/.bash_aliases
 macos       /Users/octos4murai/Public/Workspace/dotfiles/bash/bash_profile          /Users/octos4murai/.bash_profile
-macos       /Users/octos4murai/Public/Workspace/dotfiles/alacritty/alacritty.yml    /Users/octos4murai/.config/alacritty/alacritty.yml
 macos       /Users/octos4murai/Public/Workspace/dotfiles/git/gitconfig              /Users/octos4murai/.gitconfig
 macos       /Users/octos4murai/Public/Workspace/dotfiles/vim/vimrc                  /Users/octos4murai/.vimrc
 
@@ -12,9 +11,5 @@ macos       /Users/octos4murai/Public/Workspace/dotfiles/vim/vimrc              
 ubuntu      /home/octos4murai/dotfiles/bash/bashrc                  /home/octos4murai/.bashrc
 ubuntu      /home/octos4murai/dotfiles/bash/bash_aliases            /home/octos4murai/.bash_aliases
 ubuntu      /home/octos4murai/dotfiles/bash/bash_profile            /home/octos4murai/.bash_profile
-ubuntu      /home/octos4murai/dotfiles/alacritty/alacritty.yml      /home/octos4murai/.config/alacritty/alacritty.yml
 ubuntu      /home/octos4murai/dotfiles/git/gitconfig                /home/octos4murai/.gitconfig
 ubuntu      /home/octos4murai/dotfiles/vim/vimrc                    /home/octos4murai/.vimrc
-
-## Windows (with WSL) ##
-wsl         /mnt/c/Users/aidian/Workspace/dotfiles/alacritty/alacritty.yml      /mnt/c/Users/aidian/AppData/Roaming/alacritty/alacritty.yml

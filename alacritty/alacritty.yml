@@ -1,0 +1,12 @@
+# alacritty.yml - Customizations for Alacritty.
+
+env:
+  TERM: alacritty
+
+window:
+  padding:
+    x: 5
+    y: 5
+
+selection:
+  save_to_clipboard: true

@@ -16,6 +16,7 @@ set noswapfile
 " Enable plugins.
 filetype plugin on
 
+
 " - Appearance -
 
 " Apply syntax highlighting.

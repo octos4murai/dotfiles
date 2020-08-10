@@ -51,13 +51,16 @@ set autoindent
 set backspace=indent,eol,start
 
 
-" - Key Mapping -
+" - Key Mappings -
 
 " Command-Line Mode
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/':'%%'
 
 " Insert Mode
 inoremap kj <Esc>
+
+" Visual and Select Modes
+vnoremap kj <Esc>
 
 
 " - Searching - 

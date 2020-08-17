@@ -53,11 +53,14 @@ set backspace=indent,eol,start
 
 " - Key Mapping -
 
-" Command-Line Mode
+" Allow easy navigation to parent directory of current buffer.
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/':'%%'
 
-" Insert Mode
+" Remap escape key.
 inoremap kj <Esc>
+
+" Quickly remove search highlighting.
+nnoremap <CR> :noh<CR><CR>
 
 
 " - Searching - 

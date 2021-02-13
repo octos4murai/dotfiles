@@ -63,6 +63,12 @@ vnoremap kj <Esc>
 " Quickly remove search highlighting.
 nnoremap <CR> :noh<CR><CR>
 
+" Allow easy navigation across files.
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
 
 " - Searching - 
 

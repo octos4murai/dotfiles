@@ -71,3 +71,11 @@ fi
 function mcd() {
     mkdir -p "$@" && cd "$_"
 }
+
+# - Plugins -
+
+# bash-completion
+
+# If script exists and is readable, source it.
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] &&
+    . "/usr/local/etc/profile.d/bash_completion.sh"

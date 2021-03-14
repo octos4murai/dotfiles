@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Ask Duck DNS to update their record of this machine's remote IP.
 # Note: The IP is not passed in. Instead they are expected to detect it automatically.

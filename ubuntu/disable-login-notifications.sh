@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Disables login notifications for the GNOME desktop environment
 

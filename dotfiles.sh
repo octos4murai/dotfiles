@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Parse given arguments
 while [[ $# -gt 0 ]];  do
